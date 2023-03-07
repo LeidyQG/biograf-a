@@ -66,3 +66,16 @@ function promedio(a, b, c) {
   let prom =(x+y+z)/3;
   console.log(prom);
 }
+
+function distancia(a, b, c) {
+    let v1 = parseInt(document.getElementById("v1").value);
+    let v2 = parseInt(document.getElementById("v2").value);
+    let d = parseInt(document.getElementById("d").value);
+  
+    //Casting= tranformar de manera explícita el tipo del dato
+    //se hace con parseInt(), Int es entero
+    let tiempo=d/(v1-v2);
+    let tiempof=tiempo*60;
+    console.log(tiempof);
+    return tiempof
+  }
